@@ -1,0 +1,42 @@
+Crear un index.html con lo básico de html5 para iniciar una página más un formulario que
+pida una fecha, un tipo de bebida (agua, cocacola, café, etc) y la cantidad de vasos al dar
+click en el boton enviar debe agregar una fila a la tabla que se encuentra abajo del
+formulario. Para todo registro de una misma fecha, debe revisar si se tienen 8 vasos de agua
+en esa fecha y si no lo tiene la ultima columna debe decir “tomar mas agua”, si ya se
+alcanzaron los 8 vasos de agua para una misma fecha debe decir “meta alcanzada”.
+3. Crear un index.html con lo básico de html5 para iniciar una página más un formulario que
+pida un partido politico, su orientación (izq, centro, der) y la cantidad de votos al dar click
+en el botón enviar debe agregar una fila a la tabla que se encuentra abajo del formulario. Si
+la cantidad de votos es mayor a 50 colocar 50+ si es menos colocar 50- si es igual 50=. Antes
+de la tabla habrá otro botón con la leyenda ganador, al presionarlo deberá buscar entre
+todos los partidos el que tenga más votos. Y por medio de un alerta decir quién es el partido
+con mas votos y quien es el partido con menos votos. Para efectos simplicidad no ingrese
+valores iguales en los votos. 
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Ejercicio 3 Parcial</title>
+    </head>
+    <body>
+        <form action="index.html" method="get">
+            <h6>Elija el partido politico:</h6>
+            <p>Partido Politico: <input type="text" name="partido" size="60"></p>
+
+            <h6>Elija la orientación del partido:</h6>
+            <p>Orientacion: <input type="text" name="orientacion" size="40"></p>
+
+            <h6>Elija cantidad de votos:</h6>
+            <p>Cantidad de votos: <input type="number" name="votos" ></p>
+            
+            <p>
+              <input type="reset" value="Borrar">
+              <input type="submit" value="Enviar" onclick="myCreateFunction()"/><br>
+            </p>
+          </form>
+
+
+    </body>
+</html>
+
